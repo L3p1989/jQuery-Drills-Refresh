@@ -8,7 +8,7 @@ btnSubmit.attr('disabled', true);
 inputTxt.on('keyup', () => {
     btnSubmit.attr('disabled', false);
 })
-
+//on click prevent clearing of form, alert current value of inputTxt, clear that value, and then disable btnSubmit
 btnSubmit.on('click', (e) => {
     e.preventDefault();
     alert(inputTxt.val());
