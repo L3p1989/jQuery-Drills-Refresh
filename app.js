@@ -11,9 +11,11 @@ inputTxt.on('keyup', () => {
 //on click prevent clearing of form, alert current value of inputTxt, clear that value, and then disable btnSubmit
 btnSubmit.on('click', (e) => {
     e.preventDefault();
-    alert(inputTxt.val());
+    myDiv.append(`<h2>${inputTxt.val()}</h2>`);
     inputTxt.val('');
     btnSubmit.attr('disabled', true);
 });
 //Create div#myDiv and append to body
 $('body').append('<div id="myDiv"></div>');
+//Grab myDiv
+const myDiv = $('#myDiv');
