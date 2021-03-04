@@ -15,3 +15,5 @@ btnSubmit.on('click', (e) => {
     inputTxt.val('');
     btnSubmit.attr('disabled', true);
 });
+//Create div#myDiv and append to body
+$('body').append('<div id="myDiv"></div>');
